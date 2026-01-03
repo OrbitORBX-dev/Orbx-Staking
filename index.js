@@ -1,15 +1,15 @@
 require("dotenv").config();
 const express = require("express");
 const cors = require("cors");
-const startWatcher = require("./watcher");  // listens for new stakes
-const processClaims = require("./claims");  // processes matured stakes
-const db = require("./db");                 // simple database
+const startWatcher = require("./watcher");
+const processClaims = require("./claims");
+const db = require("./db");
 
 const app = express();
 app.use(cors());
 app.use(express.json());
 
-// ROUTE: Get all stakes for a wallet
+// API: Get all stakes for a wallet
 app.get("/stakes/:wallet", (req, res) => {
   const stakes = db.data.stakes.filter(
     s => s.wallet === req.params.wallet
@@ -17,20 +17,19 @@ app.get("/stakes/:wallet", (req, res) => {
   res.json(stakes);
 });
 
-// ROUTE: Get all stakes (optional, for dashboard)
+// Optional: Get all stakes
 app.get("/stakes", (req, res) => {
   res.json(db.data.stakes);
 });
 
-// Start the staking vault watcher
+// Start watcher for new stakes
 startWatcher();
 
-// Periodically process matured stakes (every 60 seconds)
+// Process matured stakes every minute
 setInterval(() => {
   processClaims().catch(err => console.error("Claim error:", err));
 }, 60 * 1000);
 
-// Start the Express server
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () =>
   console.log(`ORBX staking backend running on port ${PORT}`)
