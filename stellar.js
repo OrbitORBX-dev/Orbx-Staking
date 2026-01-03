@@ -1,4 +1,3 @@
-// stellar.js
 const { Server, Networks, Asset } = require("stellar-sdk");
 
 const server = new Server(process.env.HORIZON);
