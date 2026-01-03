@@ -1,14 +1,11 @@
-const StellarSdk = require("stellar-sdk");
+// stellar.js
+const { Server, Networks, Asset } = require("stellar-sdk");
 
-const server = new StellarSdk.Server(process.env.HORIZON);
+const server = new Server(process.env.HORIZON);
+
 const network =
-  process.env.NETWORK === "PUBLIC"
-    ? StellarSdk.Networks.PUBLIC
-    : StellarSdk.Networks.TESTNET;
+  process.env.NETWORK === "PUBLIC" ? Networks.PUBLIC : Networks.TESTNET;
 
-const asset = new StellarSdk.Asset(
-  process.env.ASSET_CODE,
-  process.env.ISSUER_PUBLIC
-);
+const asset = new Asset(process.env.ASSET_CODE, process.env.ISSUER_PUBLIC);
 
 module.exports = { server, network, asset };
