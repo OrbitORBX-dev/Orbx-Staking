@@ -11,17 +11,22 @@
         .hero-gradient { background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%); }
     </style>
 </head>
+
 <body class="bg-white text-slate-900">
 
     <!-- Navigation -->
     <nav class="flex items-center justify-between px-8 py-6 max-w-7xl mx-auto">
-        <div class="text-2xl font-bold tracking-tight text-blue-600">OrbitX<span class="text-slate-900">APPLY</span></div>
+        <div class="text-2xl font-bold tracking-tight text-blue-600">
+            OrbitX<span class="text-slate-900">APPLY</span>
+        </div>
         <div class="hidden md:flex space-x-8 font-medium">
             <a href="#services" class="hover:text-blue-600 transition">Services</a>
             <a href="#results" class="hover:text-blue-600 transition">Results</a>
             <a href="#pricing" class="hover:text-blue-600 transition">Pricing</a>
         </div>
-        <a href="#contact" class="bg-blue-600 text-white px-6 py-2 rounded-full font-semibold hover:bg-blue-700 transition">Get Started</a>
+        <a href="#contact" class="bg-blue-600 text-white px-6 py-2 rounded-full font-semibold hover:bg-blue-700 transition">
+            Get Started
+        </a>
     </nav>
 
     <!-- Hero Section -->
@@ -35,11 +40,15 @@
                     Stop wasting hours on repetitive forms. Our 2026 AI-enhanced reverse recruiting team handles the entire search, from sourcing to submission.
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4">
-                   <a href="#contact" class="bg-slate-900 text-white px-8 py-4 rounded-lg font-bold text-lg hover:shadow-xl transition">Start My Job Search</button>
-                       
+                    <a href="#contact" class="bg-slate-900 text-white px-8 py-4 rounded-lg font-bold text-lg hover:shadow-xl transition text-center">
+                        Start My Job Search
+                    </a>
+                </div>
                 <p class="mt-6 text-sm text-slate-500 font-medium">✓ Over 500 placements in 2025</p>
             </div>
-            <div class="hidden lg:block relative">
+
+            <!-- Testimonials Side -->
+            <div class="hidden lg:flex flex-col gap-6">
                 <div class="bg-white p-6 rounded-2xl shadow-2xl border border-slate-100">
                     <div class="flex items-center space-x-4 mb-4">
                         <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center text-green-600 font-bold">MJ</div>
@@ -47,22 +56,25 @@
                             <p class="font-bold text-slate-800">Morgan Johnson</p>
                             <p class="text-xs text-slate-500">Placed: Senior Product Manager</p>
                         </div>
-                      </div>
-                    <p class="italic text-slate-600">"They applied to 45 targeted roles for me. In 3 weeks I got 7 reaches, had 4 interviews and an offer. Glad i made this investment!"</p>
+                    </div>
+                    <p class="italic text-slate-600">"They applied to 45 targeted roles for me. In 3 weeks I got 7 reaches, had 4 interviews and an offer."</p>
                 </div>
-                        <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center text-green-600 font-bold">DW</div>
+
+                <div class="bg-white p-6 rounded-2xl shadow-2xl border border-slate-100">
+                    <div class="flex items-center space-x-4 mb-4">
+                        <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center text-blue-600 font-bold">DW</div>
                         <div>
                             <p class="font-bold text-slate-800">Davina Whitman</p>
                             <p class="text-xs text-slate-500">Placed: Data Engineer</p>
                         </div>
                     </div>
-                    <p class="italic text-slate-600">"They applied to targeted roles for me. I had lots of reaches in a few weeks, landed interviews and 2 offers. Quite an investment!"</p>
+                    <p class="italic text-slate-600">"They applied to targeted roles for me. I had lots of reaches in a few weeks and landed 2 offers."</p>
                 </div>
             </div>
         </div>
     </header>
 
-    <!-- The 3-Step Process -->
+    <!-- How It Works -->
     <section class="py-20 px-8 max-w-7xl mx-auto text-center">
         <h2 class="text-3xl font-bold mb-16">How It Works</h2>
         <div class="grid md:grid-cols-3 gap-12">
@@ -84,113 +96,114 @@
         </div>
     </section>
 
-    <!-- CTA / Pricing Footer -->
+    <!-- Services Section -->
+    <section id="services" class="py-20 px-8 bg-slate-50">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-16">Our 2026 Done-For-You Stack</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-white p-10 rounded-2xl shadow-sm border border-slate-100">
+                    <h3 class="text-2xl font-bold mb-4">🚀 Done-For-You Applications</h3>
+                    <p class="text-slate-600 mb-4">Our agents apply to 10+ high-quality roles daily. No "Easy Apply" spam—we complete manual forms with custom resumes.</p>
+                    <ul class="text-sm space-y-2 text-slate-500 font-medium">
+                        <li>✓ 300+ Applications Managed Monthly</li>
+                        <li>✓ Human-in-the-loop personalizations</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-10 rounded-2xl shadow-sm border border-slate-100">
+                    <h3 class="text-2xl font-bold mb-4">🤝 Recruiter Outreach</h3>
+                    <p class="text-slate-600 mb-4">We network by reaching out to 5-9 decision-makers for every role via LinkedIn and email scripts.</p>
+                    <ul class="text-sm space-y-2 text-slate-500 font-medium">
+                        <li>✓ Targeted Hiring Manager Outreach</li>
+                        <li>✓ LinkedIn Profile SEO & Social Selling</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="py-24 px-8 bg-white" id="pricing">
+        <div class="max-w-7xl mx-auto text-center mb-16">
+            <h2 class="text-4xl font-bold mb-4">Pricing Plans</h2>
+            <p class="text-slate-500">Transparent pricing for every career stage. No hidden commissions.</p>
+        </div>
+        <div class="max-w-7xl mx-auto grid md:grid-cols-3 gap-8">
+            <!-- Starter -->
+            <div class="border border-slate-200 p-8 rounded-2xl hover:border-blue-600 transition">
+                <h3 class="font-bold text-xl mb-2">Starter</h3>
+                <div class="text-4xl font-bold mb-6">$1,449 <span class="text-sm text-slate-400 font-normal">one-time</span></div>
+                <ul class="text-slate-600 space-y-4 mb-8 text-left">
+                    <li>✓ Resume & LinkedIn Polish</li>
+                    <li>✓ 5 Applications Per Day</li>
+                    <li>✓ 3-Month Access</li>
+                </ul>
+                <button class="w-full py-3 rounded-lg border-2 border-slate-900 font-bold hover:bg-slate-900 hover:text-white transition">Select Starter</button>
+            </div>
+            <!-- Pro -->
+            <div class="border-2 border-blue-600 p-8 rounded-2xl relative shadow-xl">
+                <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-blue-600 text-white px-4 py-1 rounded-full text-xs font-bold">MOST POPULAR</div>
+                <h3 class="font-bold text-xl mb-2">Professional</h3>
+                <div class="text-4xl font-bold mb-6">$4,999 <span class="text-sm text-slate-400 font-normal">one-time</span></div>
+                <ul class="text-slate-600 space-y-4 mb-8 text-left">
+                    <li>✓ Full Outreach & Networking</li>
+                    <li>✓ 10 Applications Per Day</li>
+                    <li>✓ <strong>10 Interview Guarantee</strong></li>
+                </ul>
+                <button class="w-full py-3 rounded-lg bg-blue-600 text-white font-bold hover:bg-blue-700 transition">Start Now</button>
+            </div>
+            <!-- Executive -->
+            <div class="border border-slate-200 p-8 rounded-2xl hover:border-blue-600 transition">
+                <h3 class="font-bold text-xl mb-2">Executive</h3>
+                <div class="text-4xl font-bold mb-6">$14,999 <span class="text-sm text-slate-400 font-normal">one-time</span></div>
+                <ul class="text-slate-600 space-y-4 mb-8 text-left">
+                    <li>✓ C-Suite Branding Suite</li>
+                    <li>✓ Weekly Strategy Standups</li>
+                    <li>✓ Pay-for-Placement Support</li>
+                </ul>
+                <button class="w-full py-3 rounded-lg border-2 border-slate-900 font-bold hover:bg-slate-900 hover:text-white transition">Inquire for C-Suite</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Results Section -->
+    <section id="results" class="py-20 px-8 bg-slate-900 text-white">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-12">The ROI of Professional Application Support</h2>
+            <div class="grid md:grid-cols-4 gap-8 text-center">
+                <div class="p-6">
+                    <div class="text-4xl font-bold text-blue-400 mb-2">21 Days</div>
+                    <p class="text-slate-400 text-sm italic">Average Time to First Interview</p>
+                </div>
+                <div class="p-6">
+                    <div class="text-4xl font-bold text-blue-400 mb-2">+$25k</div>
+                    <p class="text-slate-400 text-sm italic">Average Salary Increase</p>
+                </div>
+                <div class="p-6">
+                    <div class="text-4xl font-bold text-blue-400 mb-2">3,000+</div>
+                    <p class="text-slate-400 text-sm italic">Applications Submitted</p>
+                </div>
+                <div class="p-6">
+                    <div class="text-4xl font-bold text-blue-400 mb-2">92%</div>
+                    <p class="text-slate-400 text-sm italic">Placement Rate within 6 Months</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
     <section id="contact" class="bg-blue-600 text-white py-20 px-8 text-center">
         <div class="max-w-3xl mx-auto">
             <h2 class="text-4xl font-bold mb-6">Ready for your next 6-figure role?</h2>
             <p class="text-blue-100 text-lg mb-10">Join 1,000+ professionals who outsourced their job search in 2026.</p>
             <form class="flex flex-col sm:flex-row gap-4 justify-center">
                 <input type="email" placeholder="Your Email Address" class="px-6 py-4 rounded-lg text-slate-900 focus:outline-none w-full sm:w-80">
-                <button class="bg-slate-900 text-white px-10 py-4 rounded-lg font-bold hover:bg-slate-800 transition">Get A Free Audit</button>
+                <button type="submit" class="bg-slate-900 text-white px-10 py-4 rounded-lg font-bold hover:bg-slate-800 transition">
+                    Get A Free Audit
+                </button>
             </form>
         </div>
     </section>
 
-<!-- SERVICES SECTION -->
-<section class="py-20 px-8 bg-slate-50">
-    <div class="max-w-7xl mx-auto">
-        <h2 class="text-4xl font-bold text-center mb-16">Our 2026 Done-For-You Stack</h2>
-        <div class="grid md:grid-cols-2 gap-8">
-            <div class="bg-white p-10 rounded-2xl shadow-sm border border-slate-100">
-                <h3 class="text-2xl font-bold mb-4">🚀 Done-For-You Applications</h3>
-                <p class="text-slate-600 mb-4">Our agents apply to 10+ high-quality roles daily. No "Easy Apply" spam —we complete every manual form with custom resumes optimized for the latest ATS algorithms.</p>
-                <ul class="text-sm space-y-2 text-slate-500 font-medium">
-                    <li>✓ 300+ Applications Managed Monthly</li>
-                    <li>✓ Human-in-the-loop personalizations</li>
-                </ul>
-            </div>
-            <div class="bg-white p-10 rounded-2xl shadow-sm border border-slate-100">
-                <h3 class="text-2xl font-bold mb-4">🤝 Recruiter Outreach</h3>
-                <p class="text-slate-600 mb-4">We don't just apply; we network. We reach out to 5-9 decision-makers for every role you're interested in via LinkedIn and email scripts.</p>
-                <ul class="text-sm space-y-2 text-slate-500 font-medium">
-                    <li>✓ Targeted Hiring Manager Outreach</li>
-                    <li>✓ LinkedIn Profile SEO & Social Selling</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- PRICING SECTION -->
-<section class="py-24 px-8 bg-white" id="pricing">
-    <div class="max-w-7xl mx-auto text-center mb-16">
-        <h2 class="text-4xl font-bold mb-4">Pricing Plans</h2>
-        <p class="text-slate-500">Transparent pricing for every career stage. No hidden commissions.</p>
-    </div>
-    <div class="max-w-7xl mx-auto grid md:grid-cols-3 gap-8">
-        <!-- Starter -->
-        <div class="border border-slate-200 p-8 rounded-2xl hover:border-blue-600 transition">
-            <h3 class="font-bold text-xl mb-2">Starter</h3>
-            <div class="text-4xl font-bold mb-6">$1,449 <span class="text-sm text-slate-400 font-normal">one-time</span></div>
-            <ul class="text-slate-600 space-y-4 mb-8 text-left">
-                <li>✓ Resume & LinkedIn Polish</li>
-                <li>✓ 5 Applications Per Day</li>
-                <li>✓ 3-Month Access</li>
-            </ul>
-            <button class="w-full py-3 rounded-lg border-2 border-slate-900 font-bold hover:bg-slate-900 hover:text-white transition">Select Starter</button>
-        </div>
-        <!-- Pro - Highlighted -->
-        <div class="border-2 border-blue-600 p-8 rounded-2xl relative shadow-xl">
-            <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-blue-600 text-white px-4 py-1 rounded-full text-xs font-bold">MOST POPULAR</div>
-            <h3 class="font-bold text-xl mb-2">Professional</h3>
-            <div class="text-4xl font-bold mb-6">$4,999 <span class="text-sm text-slate-400 font-normal">one-time</span></div>
-            <ul class="text-slate-600 space-y-4 mb-8 text-left">
-                <li>✓ Full Outreach & Networking</li>
-                <li>✓ 10 Applications Per Day</li>
-                <li>✓ <strong>10 Interview Guarantee</strong></li>
-            </ul>
-            <button class="w-full py-3 rounded-lg bg-blue-600 text-white font-bold hover:bg-blue-700 transition">Start Now</button>
-        </div>
-        <!-- Executive -->
-        <div class="border border-slate-200 p-8 rounded-2xl hover:border-blue-600 transition">
-            <h3 class="font-bold text-xl mb-2">Executive</h3>
-            <div class="text-4xl font-bold mb-6">$14,999 <span class="text-sm text-slate-400 font-normal">one-time</span></div>
-            <ul class="text-slate-600 space-y-4 mb-8 text-left">
-                <li>✓ C-Suite Branding Suite</li>
-                <li>✓ Weekly Strategy Standups</li>
-                <li>✓ Pay-for-Placement Support</li>
-            </ul>
-            <button class="w-full py-3 rounded-lg border-2 border-slate-900 font-bold hover:bg-slate-900 hover:text-white transition">Inquire for C-Suite</button>
-        </div>
-    </div>
-</section>
-
-<!-- RESULTS SECTION -->
-<section class="py-20 px-8 bg-slate-900 text-white">
-    <div class="max-w-7xl mx-auto">
-        <h2 class="text-3xl font-bold text-center mb-12">The ROI of Professional Application Support</h2>
-        <div class="grid md:grid-cols-4 gap-8 text-center">
-            <div class="p-6">
-                <div class="text-4xl font-bold text-blue-400 mb-2">21 Days</div>
-                <p class="text-slate-400 text-sm italic">Average Time to First Interview</p>
-            </div>
-            <div class="p-6">
-                <div class="text-4xl font-bold text-blue-400 mb-2">+$25k</div>
-                <p class="text-slate-400 text-sm italic">Average Salary Increase</p>
-            </div>
-            <div class="p-6">
-                <div class="text-4xl font-bold text-blue-400 mb-2">400+</div>
-                <p class="text-slate-400 text-sm italic">3000+</p>
-            </div>
-            <div class="p-6">
-                <div class="text-4xl font-bold text-blue-400 mb-2">92%</div>
-                <p class="text-slate-400 text-sm italic">Placement Rate within 6 Months</p>
-            </div>
-        </div>
-    </div>
-</section>
-
-    
     <footer class="py-10 text-center text-slate-400 text-sm">
         &copy; 2026 OrbitX Apply Services. Licensed Reverse Recruiting Agency.
     </footer>
